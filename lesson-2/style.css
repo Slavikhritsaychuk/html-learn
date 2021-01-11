@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -49,6 +53,12 @@ input {
     font-weight: 500;
     font-size: 13px;
     line-height: 150%;
+}
+
+@media(max-width:767px) {
+    .header__sidebar {
+        padding: 10px 0 10px;
+    }
 }
 
 .header__nav {
@@ -108,6 +118,17 @@ input {
     margin-right: 30px;
 }
 
+@media(max-width:830px) {
+    .button__card {
+        padding: 7px 15px;
+
+    }
+
+    .button__card:first-child {
+        margin-right: 10px;
+    }
+}
+
 .block1 {
     background: #282828;
     text-align: center;
@@ -157,6 +178,41 @@ input {
 
 .taste__img {
     margin-top: 60px;
+    width: 14.5%;
+}
+
+@media(max-width:1023px) {
+    .block1 {
+        padding: 80px 0;
+    }
+
+    .taste {
+        padding: 15px;
+    }
+
+    .taste__subtitle {
+        margin: 0 100px;
+    }
+}
+
+@media(max-width:767px) {
+    .block1 {
+        padding: 20px 0;
+    }
+
+    .taste__title {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .taste__subtitle {
+        margin: 0 0 10px 0;
+    }
+
+    .taste__img {
+        margin: 0;
+    }
 }
 
 .block2 {
@@ -175,6 +231,8 @@ input {
 
 .harvest__text {
     max-width: 445px;
+    margin-right: 15px;
+    flex: 1 0 50%;
 }
 
 .harvest__suptitle {
@@ -224,8 +282,16 @@ input {
     margin-bottom: 45px;
 }
 
-.harvest__img {
+.table__img {
     margin-bottom: 30px;
+    width: 100%;
+}
+
+.harvest__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .harvest__button {
@@ -245,12 +311,68 @@ input {
 }
 
 .harvest__items {
-    text-align: end;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 64.6% 33.3%;
+    gap: 30px;
+
 }
 
-.last__img {
-    margin-left: 27px;
+.first__img {
+    grid-column: 1/3;
+}
+
+@media(max-width:767px) {
+    .block2 {
+        padding: 20px 0;
+    }
+
+    .harvest {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .harvest__text {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 700px
+    }
+
+    .harvest__suptitle {
+        margin-bottom: 10px;
+    }
+
+    .harvest__title {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .harvest__title::after {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .harvest__subtitle {
+        margin-bottom: 15px;
+    }
+
+    .table__img {
+        margin-bottom: 15px;
+        max-width: 445px;
+    }
+
+    .harvest__items {
+        grid-template-rows: 500px 228px;
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+
+@media(max-width:540px) {
+    .harvest__items {
+        display: block;
+    }
 }
 
 .block3 {
@@ -269,6 +391,7 @@ input {
 .tasting__inner {
     max-width: 540px;
     margin: 0 auto;
+
 }
 
 .tasting__title {
@@ -312,7 +435,7 @@ input {
     border: none;
     border-bottom: 1px solid white;
     width: 46%;
-    margin-right: 30px;
+    margin-right: 35px;
     margin-bottom: 40px;
 }
 
@@ -362,12 +485,95 @@ input {
     position: absolute;
     top: -75px;
     left: -15px;
+    width: 23%;
 }
 
 .tasting__img1 {
     position: absolute;
-    top: -75px;
-    right: -45px;
+    top: -57px;
+    right: -38px;
+    width: 23%;
+}
+
+@media(max-width:1023px) {
+    .block3 {
+        padding: 80px 0 50px;
+    }
+
+    .tasting {
+        padding-bottom: 50px;
+    }
+
+    .tasting__inner {
+        max-width: 385px;
+    }
+
+    .tasting__title {
+        padding: 10px 0;
+
+    }
+
+    .tasting__name {
+        margin-right: 22px;
+        margin-bottom: 20px;
+    }
+
+    .testing__butic {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:767px) {
+    .block3 {
+        padding: 60px 0 20px;
+    }
+
+    .tasting {
+        padding-bottom: 20px;
+    }
+
+    .tasting__inner {
+        max-width: 600px;
+        padding: 0 10px;
+    }
+
+    .tasting__title {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .tasting__subtitle {
+        padding-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .tasting__name {
+        margin-right: 30px;
+    }
+
+    .tasting__button {
+        padding: 10px 0;
+    }
+}
+
+@media(max-width:540px) {
+    .tasting__title {
+        max-width: 200px;
+
+    }
+
+    .tasting__inner {
+        text-align: -webkit-center;
+    }
+
+    .tasting__name {
+        width: 100%;
+    }
+
+    .tasting__tel {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 .footer {
@@ -379,7 +585,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 20px 50px;
     border-top: 1px solid white;
 }
 
@@ -395,8 +601,8 @@ input {
 }
 
 .footer__contact {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
@@ -411,7 +617,7 @@ input {
     text-transform: uppercase;
     color: #FFFFFF;
     border-right: 1px solid white;
-    padding: 20px 62px 20px 100px;
+    padding: 20px 0;
 }
 
 .contact__tel {
@@ -422,14 +628,15 @@ input {
     line-height: 150%;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20px 60px;
     border-right: 1px solid white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .contact__img {
-    padding: 22px 65px;
     border-right: 1px solid white;
     text-align: center;
+    padding: 20px 0;
 }
 
 .icon__img {
@@ -441,7 +648,7 @@ input {
 }
 
 .contact__email {
-    text-align: end;
+    text-align: center;
     font-family: 'Montserrat',
         sans-serif;
     font-style: normal;
@@ -449,5 +656,84 @@ input {
     line-height: 150%;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 20px 0 20px 62px;
+    padding: 20px 0;
 }
+
+@media(max-width:870px) {
+    .lacorte {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    .contact__tel {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+
+    .contact__img {
+        padding: 7px 0;
+    }
+
+    .contact__email {
+        font-size: 10px;
+        padding: 10px 0;
+    }
+}
+
+@media(max-width:767px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer__nav {
+        padding: 10px 30px;
+    }
+
+    .footer__nav_link {
+        font-size: 10px;
+    }
+
+    .icon__img {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:540px) {
+    .footer__contact {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+
+    .footer {
+        padding: 10px 0;
+    }
+
+    .footer__nav {
+        padding: 10px 0;
+    }
+
+    .footer__nav_link {
+        font-size: 8px;
+    }
+
+    .icon__img {
+        margin-right: 3px;
+    }
+
+    .lacorte {
+        font-size: 8px;
+        padding: 10px 0;
+    }
+
+    .contact__tel {
+        font-size: 8px;
+        padding: 10px 0;
+    }
+
+    .contact__img {
+        padding: 3px 0;
+    }
+
+    .contact__email {
+        font-size: 8px;
+        padding: 10px 0;
+    }
