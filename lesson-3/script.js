@@ -447,3 +447,333 @@
 //         console.log(elem);
 //     }
 // }
+
+// function sum(num) {
+//     console.log(num * num * num);
+// }
+// sum(10);
+
+// function sum(num) {
+//     if (num <= 0) {
+//         console.log('-')
+//     } else {
+//         console.log('+')
+//     }
+// }
+// sum(3)
+
+// function sum(num1, num2, num3) {
+//     console.log(num1 + num2 + num3);
+// }
+// sum(2, 5, 9);
+
+// function sum(num) {
+//     console.log(num);
+
+
+// }
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+// let param = param1 + param2 + param3;
+// sum(param);
+// function sum(num1, num2, num3) {
+//     console.log(num1 + num2 + num3);
+
+
+// }
+// let param1 = 1;
+// let param2 = 2;
+// let param3 = 3;
+// sum(param1, param2, param3);
+
+
+// function cub(num) {
+//     return num * num * num;
+// }
+// let result = cub(3);
+// console.log(result);
+
+// function sum(num) {
+//     return Math.sqrt(num)
+// }
+// let result = sum(12) + sum(3);
+// console.log(Math.floor(result));
+
+// function square(num) {
+//     return num * num;
+// }
+
+// function sum(num1, num2) {
+//     return num1 + num2;
+// }
+// let result = sum(square(2), square(3));
+// console.log(result);
+
+// function sqrt(num) {
+//     return Math.sqrt(num);
+// }
+
+// function round(num) {
+//     return num.toFixed(3);
+// }
+// let result = round(sqrt(2));
+// console.log(result);
+
+// function sqrt(num) {
+//     return Math.sqrt(num);
+// }
+
+// function sum(num1, num2, num3) {
+//     return num1 + num2 + num3;
+// }
+// let result = sum(sqrt(2), sqrt(3), sqrt(4));
+// console.log(Math.floor(result));
+
+// function func(num) {
+//     if (num <= 0) {
+//         return Math.abs(num);
+//     } else {
+//         return num * num;
+//     }
+// }
+
+// console.log(func(10));
+// console.log(func(-5));
+
+
+
+// function func(num) {
+//     if (num <= 0) {
+//         return Math.abs(num);
+//     }
+
+//     return num * num;
+// }
+
+// console.log(func(10));
+// console.log(func(-5));
+
+// function func(num) {
+//     let sum = 0;
+
+//     for (let i = 1; i <= num; i++) {
+//         sum += i;
+
+//     }
+//     return sum;
+// }
+// let result = func(5)
+// console.log(result);
+
+// function func(arr) {
+//     let sum = 0;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+
+//         // Если сумма больше или равна 10:
+//         if (sum >= 10) {
+//             return i + 1; // выходим из цикла и из 
+
+//         }
+//     }
+// }
+
+// let result = func([1, 2, 3, 5, 6]);
+// console.log(result);
+// function func() {
+//     let sum = 100;
+//     let i = 2;
+
+//     while (true) { // бесконечный цикл
+//         sum = sum / i;
+
+//         if (sum <= 10) {
+//             return i; // цикл крутится пока не выйдет тут
+//         }
+
+//         i++;
+//     }
+// }
+
+// console.log(func());
+
+// function func(num1, num2) {
+//     if (num1 > 0 && num2 > 0) {
+//         return num1 * num2;
+//     } else {
+//         return num1 - num2;
+//     }
+// }
+// console.log(func(1, 2));
+
+// function getSum(arr) {
+//     let sum = 0;
+
+//     for (let elem of arr) {
+//         sum = sum + elem * elem;
+//     }
+
+//     return sum;
+// }
+
+// let arr1 = [1, 2, 3, 4];
+// let arr2 = [5, 6, 7, 8];
+// console.log(getSum(arr1));
+// console.log(getSum(arr2));
+
+// function isPositive(arr) {
+//     for (let elem of arr) {
+//         if (arr % elem == 1) {
+//             return false;
+//         }
+
+//     }
+//     return true;
+// }
+
+
+// console.log(isPositive([5, 3, 1, 7, 9]));
+
+// function func(a, b) {
+//     return a + b >= 10
+// }
+// console.log(func(2, 3))
+
+// function getSum(arr) {
+//     let sum = 0;
+
+//     for (let elem of arr) {
+//         sum += elem;
+//     }
+
+//     return sum;
+// }
+
+// function getSquare(num) {
+//     return num * num;
+// }
+// console.log(getSquare(getSum([1, 2, 3, 4, 5])));
+
+// function getSum(arr) {
+//     let sum = 0;
+
+//     for (let elem of arr) {
+//         sum += Number(elem);
+//     }
+
+//     return sum;
+// }
+
+// function getDigits(num) {
+//     return String(num).split('');
+// }
+// console.log(getSum(getDigits(12345)));
+// let arr = [12, 13, 14, 15, 16, 155];
+// let result = [];
+
+
+// function getSum(arr) {
+//     let sum = 0;
+//     for (let elem of arr) {
+//         sum += Number(elem);
+//     }
+//     return sum;
+// }
+
+// function getDigits(num) {
+//     return String(num).split('');
+// }
+// for (let elem of arr) {
+//     if (inRange(elem)) {
+//         result.push(elem);
+//     }
+// }
+
+// function inRange(num) {
+//     let sum = getSum(getDigits(num));
+//     return sum >= 1 && sum <= 9;
+// }
+
+// console.log(result);
+
+// function getInt(arr1, arr2) {
+//     let result = [];
+
+//     for (let elem of arr1) {
+//         if (inArray(elem, arr2)) {
+//             result.push(elem);
+//         }
+//     }
+
+//     return result;
+// }
+
+// function inArray(elem, arr) {
+//     return arr.indexOf(elem) !== -1;
+// }
+// console.log(getInt([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
+
+// function getDiff(arr1, arr2) {
+//     let diff1 = getFirstDiff(arr1, arr2);
+//     let diff2 = getFirstDiff(arr2, arr1);
+
+//     return [].concat(diff1, diff2);
+// }
+
+// function getFirstDiff(arr1, arr2) {
+//     let result = [];
+
+//     for (let elem of arr1) {
+//         if (!inArray(elem, arr2)) {
+//             result.push(elem);
+//         }
+//     }
+
+//     return result;
+// }
+
+// function inArray(elem, arr) {
+//     return arr.indexOf(elem) !== -1;
+// }
+// console.log(getDiff([1, 2, 3, 4, 5], [3, 4, 5, 6]));
+
+// function getDiff(arr1, arr2) {
+//     let diff1 = getFirstDiff(arr1, arr2);
+//     let diff2 = getFirstDiff(arr2, arr1);
+//     return [].concat(diff1, diff2);
+// }
+
+// function getFirstDiff(arr1, arr2) {
+//     let result = [];
+//     for (let elem of arr1) {
+//         if (!inArray(elem, arr2)) {
+//             result.push(elem);
+//         }
+//     }
+//     return result;
+// }
+
+// function inArray(elem, arr) {
+//     return arr.indexOf(elem) !== -1;
+// }
+// console.log(getDiff([1, 2, 3, 4, 5], [2, 3, 4, 5, 6]))
+
+// let elem = document.querySelector('#elem');
+// console.log(elem);
+
+// let elem = document.getElementById('elem');
+// elem.style.backgroundColor = 'red';
+// console.log(elem.value);
+
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
+// let elem3 = document.querySelector('#elem3');
+// console.log(elem1, elem2, elem3)
+
+// let block = document.querySelector('.block p');
+// console.log(block)
+
+// let www = document.querySelector('.www');
+// console.log(www)
